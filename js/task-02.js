@@ -6,9 +6,11 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const list = document.querySelector("#ingredients");
 const item = document.createElement("li");
 console.log(item);
-const list = document.querySelector(".list");
 const markup = ingredients.map((ingredient) => `<li class = "item">${ingredient}</li>`).join("");
 console.log(markup);
-list.innerHTML = markup;
+// ul#ingredients.append(markup);
+list.innerHTML = markup;  
+

@@ -12,3 +12,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const list = document.querySelector(".gallery");
+const imgMarkup = images.map(image => { return `<li><img src="${image.url}", alt= "${image.alt}" width="300" heigth="auto"></li>` }).join("");
+console.log(imgMarkup);
+list.insertAdjacentHTML("afterbegin", imgMarkup);
+list.style.listStyle = "none";
